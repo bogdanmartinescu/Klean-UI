@@ -1,0 +1,30 @@
+# Ignore node_modules
+node_modules
+
+# Ignore build output
+dist
+build
+
+# Ignore coverage output
+coverage
+
+# Ignore lock files
+*.lock
+
+# Ignore environment variables
+.env
+.env.local
+.env.*.local
+
+# Ignore Next.js build files
+.next
+
+# Ignore public static files
+public/static
+
+# Ignore miscellaneous files
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log

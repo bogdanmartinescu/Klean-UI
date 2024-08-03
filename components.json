@@ -1,0 +1,18 @@
+{
+  "components": [
+    {
+      "name": "Button",
+      "repo": "https://github.com/bogdanmartinescu/klean-ui-components",
+      "path": "components/button",
+      "description": "A customizable button component.",
+      "aliases": ["btn", "button"]
+    },
+    {
+      "name": "Input",
+      "repo": "https://github.com/bogdanmartinescu/klean-ui-components",
+      "path": "components/input",
+      "description": "A customizable input component.",
+      "aliases": ["input", "textbox"]
+    }
+  ]
+}

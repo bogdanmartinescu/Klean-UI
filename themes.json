@@ -1,0 +1,8 @@
+{
+  "themes": {
+    "default": "styles/globals.css",
+    "green": "styles/green.css",
+    "blue": "styles/blue.css",
+    "yellow": "styles/yellow.css"
+  }
+}
