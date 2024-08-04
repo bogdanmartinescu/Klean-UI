@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import type { ToastActionElement, ToastProps } from "../ui/components/Toast";
+import type { ToastActionElement, ToastProps } from "../components/Toast";
 
 const TOAST_LIMIT = 5;
 const TOAST_REMOVE_DELAY = 10000;
