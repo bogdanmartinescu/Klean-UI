@@ -1,28 +1,23 @@
-// utils/loadTheme.ts
-import themes from "../../themes.json";
+import themes from "@/themes.json";
 
-interface Themes {
-  [key: string]: string;
-}
+export function loadTheme(themeName: string) {
+  const theme = themes[themeName];
 
-export const loadTheme = (themeName: string): void => {
-  const themeConfig: Themes = themes.themes;
-  const themePath = themeConfig[themeName] || themeConfig.default;
+  if (theme) {
+    const linkElement = document.getElementById("theme-link");
 
-  // Remove existing theme link if it exists
-  const existingLink = document.getElementById(
-    "theme-stylesheet"
-  ) as HTMLLinkElement | null;
-  if (existingLink) {
-    existingLink.parentNode?.removeChild(existingLink);
+    if (linkElement) {
+      // Update existing theme link
+      linkElement.setAttribute("href", theme.path);
+    } else {
+      // Create new theme link
+      const link = document.createElement("link");
+      link.id = "theme-link";
+      link.rel = "stylesheet";
+      link.href = theme.path;
+      document.head.appendChild(link);
+    }
+  } else {
+    console.error(`Theme ${themeName} not found`);
   }
-
-  // Create a new link element to load the selected theme
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = themePath;
-  link.id = "theme-stylesheet";
-  document.head.appendChild(link);
-
-  console.log(`${themeName} theme loaded`);
-};
+}

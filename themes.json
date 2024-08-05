@@ -1,8 +1,18 @@
 {
-  "themes": {
-    "default": "styles/globals.css",
-    "green": "styles/green.css",
-    "blue": "styles/blue.css",
-    "yellow": "styles/yellow.css"
+  "default": {
+    "path": "styles/globals.css",
+    "description": "Default theme"
+  },
+  "green": {
+    "path": "styles/green.css",
+    "description": "Green theme"
+  },
+  "blue": {
+    "path": "styles/blue.css",
+    "description": "Blue theme"
+  },
+  "yellow": {
+    "path": "styles/yellow.css",
+    "description": "Yellow theme"
   }
 }
