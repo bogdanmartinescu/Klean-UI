@@ -1,11 +1,90 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Getting Started with Klean-UI
 
-## What is Nextra?
+Welcome to **Klean-UI**, a modern, lightweight, and highly customizable UI component library built with React, TypeScript, and Tailwind CSS. Klean-UI aims to provide a robust set of components that are easy to use, extend, and theme, helping you build beautiful and consistent user interfaces effortlessly.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+## Installation
+
+To get started with Klean-UI, you need to install the library via npm or yarn. You can add Klean-UI to your project by running the following command:
+
+```sh
+
+# Using npm
+
+npm install klean-ui
+
+# Using yarn
+
+yarn add klean-ui
+```
+
+## Setup
+
+### Tailwind CSS Configuration
+
+Klean-UI uses Tailwind CSS for styling. Ensure that Tailwind CSS is set up in your project. If you haven't set up Tailwind CSS yet, you can follow the [official Tailwind CSS installation guide](https://tailwindcss.com/docs/installation).
+
+### Theme Configuration
+
+Klean-UI supports dynamic theming. You can load themes dynamically using the `loadTheme` utility. Add the following to your project to load the default theme:
+
+```typescript
+import { loadTheme } from "klean-ui/utils/loadTheme";
+
+loadTheme("default");
+```
+
+Ensure you have a `themes.json` file in your project root to define your themes:
+
+```json
+{
+  "default": {
+    "path": "styles/globals.css",
+    "description": "Default theme"
+  },
+  "green": {
+    "path": "styles/green.css",
+    "description": "Green theme"
+  }
+}
+```
+
+## Usage
+
+Klean-UI provides a variety of components. Here’s a simple example of using a Button component:
+
+```typescript
+import React from "react";
+import { Button } from "klean-ui";
+
+const App = () => {
+  return (
+    <div className="p-4">
+      <Button variant="primary">Click Me</Button>
+    </div>
+  );
+};
+
+export default App;
+```
+
+## CLI Tool
+
+Klean-UI includes a CLI tool to help you add and configure components easily. After installing Klean-UI, you can use the CLI to add components:
+
+```sh
+npx klean-ui add button
+```
+
+This command will download the Button component and place it in your `components` folder.
 
 ## Documentation
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+Explore the comprehensive documentation for each component, utility functions, and theming options on the [Klean-UI Documentation Site](https://ui.mlb.ro).
+
+## Contributing
+
+We welcome contributions! Please check out our [contributing guide](https://github.com/bogdanmartinescu/Klean-UI/blob/main/CONTRIBUTING.md) to get started.
+
+## License
+
+Klean-UI is licensed under the MIT License. See the [LICENSE](https://github.com/bogdanmartinescu/Klean-UI/blob/main/LICENSE.md) file for more details.

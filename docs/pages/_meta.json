@@ -1,13 +1,34 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Getting Started",
+  "installation": "Installation",
+  "theming": "Theming",
+  "cli": "CLI",
   "about": {
     "title": "About",
     "type": "page"
   },
+  "blocks": {
+    "title": "Blocks",
+    "type": "page"
+  },
+  "components": {
+    "title": "Components",
+    "type": "page"
+  },
+  "charts": {
+    "title": "Charts",
+    "type": "page"
+  },
+  "examples": {
+    "title": "Examples",
+    "type": "page"
+  },
+  "themes": {
+    "title": "Themes",
+    "type": "page"
+  },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact",
     "type": "page",
     "href": "https://twitter.com/shuding_",
     "newWindow": true

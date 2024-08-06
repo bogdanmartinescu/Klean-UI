@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>Klean UI</span>,
+  logo: <span className="text-xs text-bold">Klean UI</span>,
   project: {
     link: "https://github.com/bogdanmartinescu/Klean-UI",
   },
